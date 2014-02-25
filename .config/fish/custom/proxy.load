@@ -1,0 +1,5 @@
+# Set proxy
+set -x http_proxy ''
+set -x https_proxy ''
+set -x no_proxy 'localhost, '
+
