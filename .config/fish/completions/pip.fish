@@ -30,3 +30,39 @@ complete -f -c pip -n 'not __fish_pip_needs_command' -l timeout -a seconds -d 'S
 complete -f -c pip -n 'not __fish_pip_needs_command' -l exists-action -a action -d 'Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup.'
 complete -f -c pip -n 'not __fish_pip_needs_command' -l cert -a path -d 'Path to alternate CA bundle.'
 
+# pip install
+complete -f -c pip -n '__fish_pip_needs_command' -a install -d 'Install packages.'
+complete -f -c pip -n '__fish_git_using_command install' -s U -l upgrade -d 'Upgrade all packages to the newest available version. This process is recursive regardless of whether a dependency is already satisfied.'
+complete -f -c pip -n '__fish_git_using_command install' -s U -l upgrade -d 'Upgrade all packages to the newest available version. This process is recursive regardless of whether a dependency is already satisfied.'
+complete -f -c pip -n '__fish_git_using_command install' -l force-reinstall -d 'When upgrading, reinstall all packages even if they are already up-to-date.'
+
+# pip uninstall
+complete -f -c pip -n '__fish_pip_needs_command' -a uninstall -d 'Uninstall packages.'
+
+# pip freeze
+complete -f -c pip -n '__fish_pip_needs_command' -a freeze -d 'Output installed packages in requirements format.'
+
+# pip list
+complete -f -c pip -n '__fish_pip_needs_command' -a list -d 'List installed packages.'
+
+# pip show
+complete -f -c pip -n '__fish_pip_needs_command' -a show -d 'Show information about installed packages.'
+
+# pip search
+complete -f -c pip -n '__fish_pip_needs_command' -a search -d 'Search PyPI for packages.'
+
+# pip wheel
+complete -f -c pip -n '__fish_pip_needs_command' -a wheel -d 'Build wheels from your requirements.'
+
+# pip zip
+complete -f -c pip -n '__fish_pip_needs_command' -a zip -d 'Zip individual packages.'
+
+# pip unzip
+complete -f -c pip -n '__fish_pip_needs_command' -a unzip -d 'Unzip individual packages.'
+
+# pip bundle
+complete -f -c pip -n '__fish_pip_needs_command' -a bundle -d 'Create pybundles.'
+
+# pip help
+complete -f -c pip -n '__fish_pip_needs_command' -a help -d 'Show help for commands.'
+
