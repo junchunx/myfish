@@ -1,4 +1,4 @@
-myfish
+Myfish
 ======
 
 My Fish Shell configurations.
